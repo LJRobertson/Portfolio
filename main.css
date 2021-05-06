@@ -1,9 +1,25 @@
+html, body{
+    height: 100%;
+}
+
 body {
-    background: url(Assets/lennon-cheng-2lkooyqeBe8-unsplash.jpg)  no-repeat fixed top center;
+    display: flex;
+    flex-direction: column;
+    background: url(Assets/marek-piwnicki-mt9TrXpGQjo-unsplash.jpg)  no-repeat fixed top center;
     background-size: 100% 100%;
 }
 
-#fs-frm{
-    background-color: lightblue;
-    border: 5px solid green;
+.flex-settings{
+    flex: 1 0 auto;
+}
+
+.title{
+    color: lightgray;
+    padding: 20vh 15vw 5vh 15vw;
+
+}
+
+.footer{
+    flex-shrink: 0;
+    background-color: lightgray;
 }
