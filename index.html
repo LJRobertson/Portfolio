@@ -14,6 +14,7 @@
 
 <body>
     <div class="flex-settings">
+        <!-- <div class="wrapper"> -->
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -27,29 +28,45 @@
             crossorigin="anonymous"></script>
         <!--header-->
         <header>
-            <nav id="nav-bar">
+            <nav class="nav-bar">
+                <div class="nav-buttons">
+                    <div class="btn btn-outline-light"><a href="#about-me-link">About</a></button></div>
+                    <div class="btn btn-outline-light"><a href="#">Projects</a></button></div>
+                    <div class="btn btn-outline-light"><a href="#">Contact</a></button></div>
+            </div>
+
             </nav>
         </header>
-        <div class="title text-center">
-            <h1>Lindsey Robertson</h1>
-            <div class="navigation-buttons text-center">
-                <ul>
-                    <li class="btn btn-outline-light"><a href="#">About</a></button></li>
-                    <li class="btn btn-outline-light"><a href="#">Projects</a></button></li>
-                    <li class="btn btn-outline-light"><a href="#">Contact</a></button></li>
-                </ul>
+        <div class="name-wrapper">
+            <div class="my-name">
+                <h1>Lindsey Robertson</h1>
             </div>
         </div>
-        <!-- <div class="about-me">
-            <h3>About Me</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo, voluptate atque cupiditate fuga harum, nulla inventore eveniet perspiciatis sint, veniam quia praesentium voluptatibus asperiores earum possimus obcaecati est? Consequatur!</p>
+
+        <div class="about-me-wrapper">
+        <div class="about-me">
+            <div class="left">
+                <h3 class="section-header text-center" id="about-me-link">About Me</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo, voluptate atque cupiditate fuga harum, nulla inventore eveniet perspiciatis sint, veniam quia praesentium voluptatibus asperiores earum possimus obcaecati est? Consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. At reiciendis ratione tenetur eius harum fuga libero cupiditate sequi maxime est nulla aut repellat voluptate quibusdam laboriosam, expedita veniam? Vel,</p>
+            </div>
+            <div class="right">
+                <div class="profile-photo">
+                </div>
+            </div>
         </div>
-        <div class="prjects">
-            <h3>My Projects</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quisquam quaerat quae error porro minus accusantium odio aperiam praesentium dolorem nulla sunt officia molestias alias perspiciatis tempore vitae eos ea.</p>
         </div>
-        <div class="contact">
-            <h3>Contact Me</h3>
+
+        <div class="projects-wrapper">
+            <div class="projects">
+                    <h3 class="section-header text-center" id="about-me-link">Projects</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo, voluptate atque cupiditate fuga harum, nulla inventore eveniet perspiciatis sint, veniam quia praesentium voluptatibus asperiores earum possimus obcaecati est? Consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. At reiciendis ratione tenetur eius harum fuga libero cupiditate sequi maxime est nulla aut repellat voluptate quibusdam laboriosam, expedita veniam? Vel,</p>
+                    <div>Project goes here</div>
+                    <!-- if I run out of room, change the css height to min-height -->
+            </div>
+        </div>
+    
+        <!-- <div class="contact">
+            <h3 class="section-header text-center">Contact Me</h3>
             <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xayaqarz" method="post">
                 <fieldset id="fs-frm-inputs">
                   <label for="full-name">Name</label>
@@ -61,18 +78,18 @@
                   <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
                 </fieldset>
                 <input type="submit" value="Submit">
-              </form>
-        </div>
-        <div class="social-media"></div> -->
+              </form> -->
+        <!-- </div>  -->
+        <!-- <div class="social-media"></div> -->
         <!--links for github, resume, and linkedin-->
-
     </div>
+    <!-- </div> -->
     <!--footer-->
-    <footer class="footer">
-        <div class="footer-box text-center">
+    <!-- <footer class="footer">
+        <div class="footer-box text-left">
             <h5>Lindsey Robertson &copy; 2021</h5>
         </div>
-    </footer>
+    </footer> -->
 </body>
 
 </html>

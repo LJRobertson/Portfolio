@@ -3,23 +3,150 @@ html, body{
 }
 
 body {
+    width: 100%;
     display: flex;
+    /* justify-content: center;
+    align-items: center ; */
     flex-direction: column;
-    background: url(Assets/marek-piwnicki-mt9TrXpGQjo-unsplash.jpg)  no-repeat fixed top center;
     background-size: 100% 100%;
+}
+
+nav{
+    display: flex !important;
+    float:right;
+    height: 60px;
+    width: 100%;
+    background-color:black;
+    opacity: .6;
+    align-items: center;
+    /* justify-content: right; */
+    padding-right: 0.5em;
+    position: fixed;
+    z-index: 99;
+}
+
+.nav-buttons{
+    width: 750px;
+    justify-content: space-evenly;
 }
 
 .flex-settings{
     flex: 1 0 auto;
 }
 
-.title{
+/* .wrapper{
+height: 100%;
+margin-bottom: -30px;
+} */
+
+.name-wrapper{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    width: 100%;
+    min-height: 90%;
+    margin-top: -60px;
+    background: url(Assets/marek-piwnicki-mt9TrXpGQjo-unsplash.jpg)  no-repeat fixed top center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.my-name{
+    width: 750px;
     color: lightgray;
     padding: 20vh 15vw 5vh 15vw;
 
 }
 
+
+.my-name h1{
+    display: flex;
+    justify-content: center;
+}
+
+.section-header{
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.about-me-wrapper{
+background-color: white;
+padding: 30px;
+}
+
+.about-me{
+    background-color: #0B5563;
+    color: lightgrey;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content:space-between;
+}
+
+/* #about-me-link{
+    font-size: 35px;
+    font-weight: bold;
+} */
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 15px;
+    padding: 20px;
+}
+
+.left p{
+padding: 0px 90px;
+}
+
+.right{
+    margin-left:15px
+}
+
+.profile-photo{
+    background: url(Assets/LindseyRobertson2\ -\ Copy.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 400px;
+}
+
+.projects-wrapper{
+    background-color: white;
+    padding: 0px 30px 30px 30px;
+    }
+    
+.projects{
+        background-color: #A2BCE0;
+        color: lightgrey;
+        height: 80%;
+        padding: 30px;
+        display: flex;
+        justify-content:space-between;
+}
+
+.contact{
+    background-color: #721121;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .footer{
     flex-shrink: 0;
+    height: 30px;
     background-color: lightgray;
+}
+
+.footer h5{
+    height: 30px;
+    display: flex;
+padding-left: 0.5em;
+align-items: center; 
 }
