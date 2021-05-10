@@ -1,3 +1,11 @@
+/* resets page */
+*{
+    /* margin: auto;
+    padding: 0; */
+    box-sizing: border-box; 
+     /* border: 2px red solid; */
+}
+
 html, body{
     height: 100%;
 }
@@ -8,7 +16,10 @@ body {
     /* justify-content: center;
     align-items: center ; */
     flex-direction: column;
-    background-size: 100% 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin-bottom: 16px;
 }
 
 nav{
@@ -34,10 +45,10 @@ nav{
     flex: 1 0 auto;
 }
 
-/* .wrapper{
+.wrapper{
 height: 100%;
 margin-bottom: -30px;
-} */
+}
 
 .name-wrapper{
     display: flex;
@@ -57,9 +68,7 @@ margin-bottom: -30px;
     width: 750px;
     color: lightgray;
     padding: 20vh 15vw 5vh 15vw;
-
 }
-
 
 .my-name h1{
     display: flex;
@@ -130,21 +139,46 @@ padding: 0px 90px;
         justify-content:space-between;
 }
 
-.contact{
+.contact-me{
     background-color: #721121;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    height: 40%;
+    color: lightgray;
+    padding: 30px;
+}
+form{
+    width: 40%;
 }
 
-.footer{
-    flex-shrink: 0;
+fieldset{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+}
+
+input, textarea{
+    opacity: .6;
+}
+
+.submit-button{
+    margin-top: 20px;
+}
+
+.submit-button:hover{
+    background-color: #A5402D;
+    border: none;
+}
+
+.page-footer{
     height: 30px;
     background-color: lightgray;
 }
 
-.footer h5{
+.page-footer h5{
     height: 30px;
     display: flex;
 padding-left: 0.5em;
