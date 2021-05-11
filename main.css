@@ -198,13 +198,9 @@ padding: 0px 90px;
         flex-direction: column;
 }
 
-.carousel-inner{
-    justify-content: space-evenly;
-}
-
-.img-thumbnail{
-    height: 550px;
-    width: 550px;
+.project-picture{
+    height: 400px;
+    width: auto;
 }
 
 .my-project-box{
