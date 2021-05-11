@@ -133,13 +133,12 @@ padding: 30px;
 }
 
 .biography{
-    padding: 60px;
+    padding: 0 60px;
 }
 
-/* #about-me-link{
-    font-size: 35px;
-    font-weight: bold;
-} */
+.profile-photo-test{
+    margin-bottom: 40px;
+}
 
 .left{
     display: flex;
@@ -170,8 +169,6 @@ padding: 0px 90px;
 .test-row{
     display: flex;
 }
-
-
 
 .profile-photo-test img{
      min-width: 50%;
@@ -220,6 +217,7 @@ padding: 0px 90px;
 
 .bottom{
     padding: 10px;
+    margin-bottom: 40px;
 }
 
 .contact-me{
