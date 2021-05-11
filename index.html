@@ -28,43 +28,132 @@
         <!--header-->
         <header>
             <nav class="nav-bar">
-                <div class="nav-buttons">
-                    <div class="btn btn-outline-light"><a href="#about-me-link">About</a></button></div>
-                    <div class="btn btn-outline-light"><a href="#">Projects</a></button></div>
-                    <div class="btn btn-outline-light"><a href="#">Contact</a></button></div>
+                <div class="nav-buttons smooth-scroll">
+                    <div class="about-button btn btn-outline-light"><a class="navigation-button" href="#my-home-link">Home</a></button></div>
+                    <div class="about-button btn btn-outline-light"><a class="navigation-button" href="#about-me-link">About</a></button></div>
+                    <div class="about-button btn btn-outline-light"><a class="navigation-button" href="#my-projects-link">Projects</a></button></div>
+                    <div class="about-button btn btn-outline-light"><a class="navigation-button" href="#my-contact-link">Contact</a></button></div>
+                    <div class="about-button btn btn-outline-light"><a class="navigation-button" href="#">Resume</a></button></div>
             </div>
 
             </nav>
         </header>
-        <div class="name-wrapper">
+        <div class="name-wrapper" id="my-home-link">
             <div class="my-name">
                 <h1>Lindsey Robertson</h1>
+                <div class="social-media">
+                    <a href="https://github.com/LJRobertson" target="_blank"><img src="Assets/GitHub-Mark-32px.png"></a>
+                    <a href="www.linkedin.com/in/lindsey-r-34724830" target="_blank"><img src="Assets/LI-In-Bug.png"></a>
+                </div>
             </div>
         </div>
 
         <div class="about-me-wrapper">
-        <div class="about-me">
-            <div class="left">
-                <h3 class="section-header text-center" id="about-me-link">About Me</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo, voluptate atque cupiditate fuga harum, nulla inventore eveniet perspiciatis sint, veniam quia praesentium voluptatibus asperiores earum possimus obcaecati est? Consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. At reiciendis ratione tenetur eius harum fuga libero cupiditate sequi maxime est nulla aut repellat voluptate quibusdam laboriosam, expedita veniam? Vel,</p>
-            </div>
-            <div class="right">
-                <div class="profile-photo">
+            <div class="about-me" id="about-me-link">
+                <h3 class="section-header text-center">About Me</h3>
+                <div class="about-content-wrap">
+                    <!-- start test -->
+                    <div class="container-fluid">
+                    <div class="test-row row">
+                        <div class="col-sm-6">
+                            <p class="biography">I'm a Northwest native who has called Indiana home for many years now. I hold a Humanities degree with a concentration in English, leading many to ask "what do you do with a BA in English?" 
+                            </p>
+                        </div>   
+                        <div class="profile-photo-test col-sm-6">
+                            <img src="Assets/LindseyRobertson2 - Copy.jpg" class="rounded img-fluid" alt="...">
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                <!-- end test -->
+                        <!-- <div class="left">
+                            <p>I'm a Northwest native who has called Indiana home for many years now. I hold a Humanities degree with a concentration in English, leading many to ask "what do you do with a BA in English?" 
+                            <br>
+                            The majority of my career has been in the banking industry and I enjoy helping others improve their finances.
+                            <br>
+                            In my free time, I enjoy solving puzzles and spending time with friends and family. Hobby board games are a passion of mine, as they usually involve both puzzles and friends and family.  
+                                With no fine-arts skill, I've decided to try combining my desire to create with </p>
+                            
+                        </div> -->
+                        
+                        <!-- <div class="right">
+                            <div class="profile-photo">
+                                <img src="Assets/LindseyRobertson2 - Copy.jpg" class="rounded img-responsive" alt="...">
+                            </div>
+                        </div> -->
                 </div>
             </div>
         </div>
-        </div>
+
 
         <div class="projects-wrapper">
-            <div class="projects">
-                    <h3 class="section-header text-center" id="about-me-link">Projects</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo, voluptate atque cupiditate fuga harum, nulla inventore eveniet perspiciatis sint, veniam quia praesentium voluptatibus asperiores earum possimus obcaecati est? Consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. At reiciendis ratione tenetur eius harum fuga libero cupiditate sequi maxime est nulla aut repellat voluptate quibusdam laboriosam, expedita veniam? Vel,</p>
-                    <div>Project goes here</div>
+            <!-- divs for "top" and "bottom" have h3 header in top and the bottom div will have the projects. This Flex Column should allow this to stack, so all project images go in the bottom. -->
+            <div class="projects" id="my-projects-link">
+                <div class="top">
+                    <h3 class="section-header text-center">Projects</h3>
+                </div>
+                <div class="bottom">
+                    <!-- <div class="my-project-box">
+                        <div class="left">
+                            <h4>First Project</h4>
+                            <a href="https://codepen.io/skittles_037/pen/mdEvwRQ" target="_blank">
+                            <div class="first-project-photo"></div>
+                            </a>
+                        </div>
+                        <div class="right">
+                            <p>A create built using only CSS.</p>
+                        </div>
+                    </div> -->
+                    <div class="project-carosel">
+                        <div id="carouselId" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselId" data-slide-to="1"></li>
+                                <li data-target="#carouselId" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+
+                                        <div class="left">
+                                            <h4>CSS Creature</h4>
+                                            <a href="https://codepen.io/skittles_037/pen/mdEvwRQ" target="_blank">
+                                            <div class="first-project-photo"></div>
+                                            </a>
+                                        </div>
+                                        <div class="right">
+                                            <p>A creature built using only CSS.</p>
+                                        </div>
+
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="img-thumbnail img-responsive" src="Assets/marek-piwnicki-mt9TrXpGQjo-unsplash.jpg" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="img-thumbnail  img-responsive" src="Assets/LindseyRobertson2 - Copy.jpg" alt="Third slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="img-thumbnail  img-responsive" src="Assets/marek-piwnicki-mt9TrXpGQjo-unsplash.jpg" alt="Fourth slide">
+
+                                    <img class="img-thumbnail  img-responsive" src="Assets/marek-piwnicki-mt9TrXpGQjo-unsplash.jpg" alt="Fifth slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                     <!-- if I run out of room, change the css height to min-height -->
             </div>
         </div>
     
-        <div class="contact-me">
+        <div class="contact-me" id="my-contact-link">
             <h3 class="section-header text-center">Contact Me</h3>
             <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xayaqarz" method="post">
                 <fieldset id="fs-frm-inputs">
